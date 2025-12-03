@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/main.css">
-
-
 </head>
 
 <body>
@@ -17,10 +15,10 @@
     <h3>Celebrating our <em class="large">75</em><sup>th</sup> Year</h3>
   </header>
 
+  <!-- Create navbar, menu, submenu, and dropdown menu classes -->
   <nav class="navbar">
     <input type="checkbox" id="checkbox-toggle" />
     <label for="checkbox-toggle" class="menu-btn"></label>
-
     <ul class="menu">
       <li><a class="current">Home</a></li>
       <li class="submenu">
@@ -47,6 +45,7 @@
   </nav>
 
   <main>
+    <!-- links to guest speakers pages and jpeg images -->
     <aside>
       <h2>Guest speakers</h2>
       <h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
@@ -74,7 +73,7 @@
       <article class="featured">
         <h2>Fossil Threads in the Web of Life</h2>
 
-        <!-- <img src="images/sampson_dinosaur.jpg" alt="Scott Sampson with dinosaur"> -->
+        <!-- Video of Scott Sampson with dinosaur and jpgs  -->
 				<figure>
           <video controls poster="images/sampson_dinosaur.jpg">
             <source src="media/sampson.mp4" type="video/mp4">
@@ -107,6 +106,8 @@
   <footer>
     <p>&copy; San Joaquin Valley Town Hall, Fresno, CA 93755</p>
   </footer>
+
+  <!-- Hide menu after clicking a link -->
   <script>
     document.querySelectorAll('.menu a').forEach(link => {
       link.addEventListener('click', () => {
@@ -114,5 +115,6 @@
       });
     });
   </script>
+
 </body>
 </html>
